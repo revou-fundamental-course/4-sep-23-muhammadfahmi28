@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematk Persegi</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="header align-center shadow">
+            <b>Kaltik</b> Kalkulator Matematik
+        </div>
+        <div class="content">
+            <div class="card shadow">
+                <div class="align-center" style=" margin: 1rem 0rem;">
+                    Welcome to Kaltik
+                </div>
+                <div class="tabs" style="margin-bottom: 1rem;">
+                    <div class="tab active" data-tab-name="luas" data-tab-content="tab_kalkulator">
+                        Luas Persegi
+                    </div>
+                    <div class="tab" data-tab-name="keliling" data-tab-content="tab_kalkulator">
+                        Keliling Persegi
+                    </div>
+                </div>
+                <div id="tab_kalkulator" class="tab-content">
+                    <div id="tab-title" class="tab-title d-block">
+                        Luas Persegi Panjang
+                    </div>
+                    <div class="tab-item active" data-tab-name="luas" style="padding: 1rem ;">
+                        <p class="align-center">
+                            Luas Persegi Panjang
+                        </p>
+                    </div>
+                    <div class="tab-item" data-tab-name="keliling" style="padding: 1rem;">
+                        <p class="align-center">
+                            Keliling Persegi Panjang
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: end;">
+                    <a href="javascript:;" class="btn btn-yellow">
+                        Reset
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
