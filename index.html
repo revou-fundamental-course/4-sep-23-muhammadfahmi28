@@ -10,39 +10,60 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="header align-center shadow">
+        <header class="header align-center shadow">
             <b>Kaltik</b> Kalkulator Matematik
-        </div>
-        <div class="content">
+        </header>
+        <section class="content">
             <div class="card shadow">
                 <div class="align-center" style=" margin: 1rem 0rem;">
                     Welcome to Kaltik
                 </div>
                 <div class="tabs" style="margin-bottom: 1rem;">
-                    <div class="tab active" data-tab-name="luas" data-tab-content="tab_kalkulator">
-                        Luas Persegi
+                    <div class="tab active" data-tab-name="persegi" data-tab-content="tab_kalkulator">
+                        Persegi
                     </div>
-                    <div class="tab" data-tab-name="keliling" data-tab-content="tab_kalkulator">
-                        Keliling Persegi
+                    <div class="tab" data-tab-name="persegi_panjang" data-tab-content="tab_kalkulator">
+                        Persegi Panjang
                     </div>
                 </div>
                 <div id="tab_kalkulator" class="tab-content">
                     <div id="tab-title" class="tab-title d-block">
                         Luas Persegi Panjang
                     </div>
-                    <div class="tab-item active" data-tab-name="luas" style="padding: 1rem ;">
+                    <section class="tab-item active" data-tab-name="persegi" style="padding: 1rem ;">
                         <p class="align-center">
-                            Luas Persegi Panjang
+                            Hitung Persegi
                         </p>
-                    </div>
-                    <div class="tab-item" data-tab-name="keliling" style="padding: 1rem;">
+                        <label for="persegi_sisi">Panjang Sisi</label>
+                        <input id="persegi_sisi" type="number">
+                        <p id="persegi_result">&nbsp;</p>
+                        <small style="color: gray; opacity: 0.5;">
+                            Keliling = 4 x s
+                            Luas = s x s <br>
+                            
+                        </small>
+                    </section>
+                    <section class="tab-item" data-tab-name="persegi_panjang" style="padding: 1rem;">
                         <p class="align-center">
-                            Keliling Persegi Panjang
+                            Hitung Persegi Panjang
                         </p>
-                    </div>
+                        <label for="persegi_panjang_p">Panjang</label>
+                        <input id="persegi_panjang_p" type="number">
+                        <label for="persegi_panjang_l">Lebar</label>
+                        <input id="persegi_panjang_l" type="number">
+                        <p id="persegi_panjang_result">&nbsp;</p>
+                        <small style="color: gray; opacity: 0.5;">
+                            Keliling = 2(p + l)
+                            Luas = p x l <br>
+                        </small>
+                    </section>
                 </div>
                 <div style="text-align: end;">
-                    <a href="javascript:;" class="btn btn-yellow">
+                    <a id="button_hitung" href="javascript:;" class="btn btn-blue disabled">
+                        Hitung
+                    </a>
+
+                    <a id="button_reset" href="javascript:;" class="btn btn-yellow">
                         Reset
                     </a>
                 </div>

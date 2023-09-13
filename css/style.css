@@ -23,6 +23,10 @@ a.btn {
     font-weight: 600;
 }
 
+.btn.disabled, .btn:disabled {
+    background-color: rgb(201, 201, 201) !important;
+}
+
 .align-center {
     text-align: center;
 }
@@ -58,24 +62,30 @@ a.btn {
     padding: 1rem;
     background-color: white;
     border-radius: 0.5rem;
+    max-width: 740px;
+    margin: auto;
 }
 
 .tabs {
     display: flex;
 }
+
 .tab {
     border-radius: 0.5rem;
     width: 100%;
     padding: 0.5rem;
     cursor: pointer;
 }
+
 .tab:hover {
     background-color: rgba(95, 158, 160, 0.3);
 }
+
 .tab.active {
     background-color: cadetblue;
     color: white;
 }
+
 .tab-content {
     border: 1px solid cadetblue; border-radius: 0.5em; overflow: hidden; margin-bottom: 0.5rem;
 }
